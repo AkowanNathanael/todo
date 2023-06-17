@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+/* variables */ 
+:root{
+    --white: #fff;
+    --milk: #FAFAFA;
+}
+/* end of  variables */
+
+/* bg colors */
+.bg-milk{
+    background-color: var(--milk);
+}
+/* text color */
+.txt-white{
+    color: white;
+}
+
+
+/* utils */
+.hideme{
+    display: none;
+}
+.showme{
+    display: inline;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.spacer-20{
+    padding: 20px;
+}
+.spacer-10{
+    padding: 10px;
+}
+.pad-20{
+    padding: 20px;
+}
+.pad-10{
+    padding: 10;
+}
+.curve-right-top{
+    border-top-right-radius: 6px;
+}
+
+.curve-left-top{
+    border-top-left-radius: 6px;
+}
+.curve-left-bottom{
+    border-bottom-left-radius: 6px;
+}
+.curve-right-bottom{
+    border-bottom-right-radius: 6px;
+}
+.curve-all{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.btn1{
+    outline: none;
+    border: none;
+    padding: 1px 3px;
+    margin: 1px 2px;
+    border-radius: 3px;
+}
+
+/* end of utils */
+
+body{
+    background-color:#FAFAFA;
+    margin: 0;
+    font-size: 30px;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    background-color: blanchedalmond;
+    width: 15px;
+}
+body::-webkit-scrollbar-track{
+    background-color: grey;
+   
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    color: pink;
+    background-color: pink;
+}
+.attribution{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.bg-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-image: url(./images/bg-desktop-light.jpg);
+    height: 45vh;
+}
+
+.main{
+    position: relative;
+    margin: -220px auto 0;
+    width: 50%;
+    /* box-shadow: 3px 2px 200px 1px rgb(221, 208, 208); */
+    z-index: 2;
+    padding: 20px;
+}
+.main h1{
+display: flex;
+justify-content: space-between;
+font-size: 40px;
+}
+
+/* todo  styles*/
+.todos{
+
+}
+
+.todo-items:hover{
+    border: 1px solid rgb(66, 230, 66);
+}
+
+.todo-items{
+    background-color: var(--milk);
+    padding: 15px;
+    /* border-radius: 5px; */
+    border-bottom: 1px solid rgb(218, 204, 204);
+    box-shadow: 3px 3px 70px 1px rgb(218, 212, 212);
+    margin: 3px;
+}
+
+.todo-items:hover > span.hideme {
+    display: inline;
+    background-color: rgb(243, 228, 59);
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.wrap-item{
+    padding: 7px;
+    display: flex;
+}
+.wrap-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.create-todo{
+    border: 1px solid silver;
+}
+
+#search{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+/* small screen */
+@media only screen and (max-width: 768px){
+    .main{
+        width: 100%;
+    }
+    
+    .todos{
+        width: 100%;
+    }
+    .todo-items{
+        width: 95%;
+        /* background-color: red; */
+    }
+    .todo-footer>div{
+        font-size: 10px;
+    }
+    
+}
