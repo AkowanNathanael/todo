@@ -106,16 +106,21 @@
       <div class="todo-footer">
         <div class="wrapper todo-items curve-left-bottom curve-right-bottom ">
             <div class="wrap-item"> <span id="numofel">  </span> items left</div>
-            <div class="wrap-item wrap-flex"> 
+            <div id="controls" class="wrap-item wrap-flex"> 
               <button  id="all" class="btn1 ">All</button>
               <button id="active" class="btn1 "> Active </button>
               <button id="completed" class="btn1 ">Completed</button> 
             </div>
-            <div class="wrap-item"><button id="clear-complted" class="btn1 "> clear completed</button> </div>
+            <div class="wrap-item"><button id="clear-completed" class="btn1 "> clear completed</button> </div>
         </div>
       </div>
     </div>
   </div>
+  
+
+  <footer class="text-muted text-center mt-4">
+     Drag and drop to reorder
+  </footer>
   <script src="./Sortable.min.js" ></script>
   <script type="text/javascript">
     new Sortable(document.getElementById('todos'));

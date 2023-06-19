@@ -157,6 +157,7 @@ font-size: 40px;
     border: 1px solid silver;
 }
 
+
 #search{
     outline: none;
     border: none;
@@ -188,6 +189,11 @@ font-size: 40px;
     }
     .todo-footer>div{
         font-size: 10px;
+    }
+    #controls{
+ position: relative;
+ bottom: -50px;
+
     }
     
 }

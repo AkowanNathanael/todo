@@ -240,3 +240,28 @@ function resetTodoDisplay() {
     todos[i].style.display = 'none';
   }
 }
+
+
+
+
+// Create a media query
+var mediaQuery = window.matchMedia('screen and (max-width: 768px)');
+
+// Check if the media query matches initially
+if (mediaQuery.matches) {
+  // Media query matches, execute your code here
+  console.log('Media query matches');
+  document.getElementById("controls").addClass="todo-items"
+}
+
+// Listen for changes in the media query
+mediaQuery.addListener(function(query) {
+  if (query.matches) {
+    // Media query matches, execute  code here
+    console.log('Media query matches');
+    document.getElementById("controls").addClass="todo-items"
+  } else {
+    // Media query doesn't match, execute another code block here or revert changes
+    console.log('Media query doesn'+'t match');
+  }
+});
