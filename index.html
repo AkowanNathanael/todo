@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link id="theme-style" rel="stylesheet" href="app.css">
   <link rel="stylesheet" href="./bootstrap.min.css">
-  <script src="./bootstrap.bundle.min.js" async></script>
-  <script src="./app.js" async></script>
+  <script src="./bootstrap.bundle.min.js"></script>
+  
   
 
   
@@ -46,21 +46,21 @@
         <span class="head txt-white">Todo</span> 
         <span class="dark-mode">
           <button id="darkmode" class="btn">
-            <img src="./images/icon-moon.svg" alt="darkmode">
+            <img id="mode" class="" src="./images/icon-moon.svg" alt="darkmode">
           </button>
         </span>
       </h1>
       <div class="spacer-10"></div>
       <div class="create-todo todo-items  pad-20 curve-all bg-milk">
         <div  class="form-check">
-          <input  onclick="Btnlogic(this)" class="form-check-input not" type="checkbox" id="check1" name="option1" value="something" >
-          <input id="search" placeholder="create a new todo" title="" type="text" name="" id="">
+          <input  onclick="Btnlogic(this)" style="display: none;" class="form-check-input not" type="checkbox" id="check1" name="option1" value="something " >
+          <input onkeyup="newBtnLogic(event,this)" class=""  id="search" placeholder="create a new todo" title="" type="text" name="" id="">
         </div>
        
       </div>
       <div class="spacer-10"></div>
       <div id="todos" class="todos">
-        <div class="todo-items curve-right-top curve-left-top">
+        <!-- <div class="todo-items curve-right-top curve-left-top">
           <div onmouseenter="formCheckEnter(this)" onmouseleave="formCheckLeave(this)" class="form-check">
             <input onclick="Btnlogic(this)"  class="form-check-input" type="checkbox" id="check2" name="option1" value="something" >
             <label class="form-check-label"> item 1</label>
@@ -101,7 +101,7 @@
             <label class="form-check-label"> item 6</label>
             <span  onclick="closebtn(this)" class="float-right hideme closebtn "> <img src="./images/icon-cross.svg" alt=""></span>
           </div>
-        </div> 
+        </div>  -->
       </div>
       <div class="todo-footer">
         <div class="wrapper todo-items curve-left-bottom curve-right-bottom ">
@@ -121,6 +121,8 @@
   <footer class="text-muted text-center mt-4">
      Drag and drop to reorder
   </footer>
+  <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./app.js" ></script>
   <script src="./Sortable.min.js" ></script>
   <script type="text/javascript">
     new Sortable(document.getElementById('todos'));

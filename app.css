@@ -121,7 +121,7 @@ font-size: 40px;
 
 /* todo  styles*/
 .todos{
-
+background-color: inherit;
 }
 
 /* .todo-items:hover{
@@ -191,9 +191,21 @@ font-size: 40px;
         font-size: 10px;
     }
     #controls{
- position: relative;
- bottom: -50px;
+    width: 100%;
+    /* background-color: ; */
+    /* display: block; */
+    /* position: absolute; */
+    /* bottom: -100px; */
+    bottom: -70px;
 
     }
+    /* .wrap-item{ */
+        /* padding: 7px; */
+        /* display: fl; */
+    /* } */
+    /* .wrap-flex{ */
+        /* display: flex; */
+        /* justify-content: space-between; */
+    /* } */
     
 }
