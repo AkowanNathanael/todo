@@ -124,16 +124,16 @@ font-size: 40px;
 
 }
 
-.todo-items:hover{
+/* .todo-items:hover{
     border: 1px solid rgb(66, 230, 66);
-}
+} */
 
 .todo-items{
     background-color: var(--milk);
     padding: 15px;
     /* border-radius: 5px; */
     border-bottom: 1px solid rgb(218, 204, 204);
-    box-shadow: 3px 3px 70px 1px rgb(218, 212, 212);
+    /* box-shadow: 1px 1px 3px 1px rgb(218, 212, 212); */
     margin: 3px;
 }
 
