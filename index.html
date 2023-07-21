@@ -107,9 +107,9 @@
         <div class="wrapper todo-items curve-left-bottom curve-right-bottom ">
             <div class="wrap-item custom-text-muted"> <span id="numofel">  </span> items left</div>
             <div id="controls" class="wrap-item wrap-flex "> 
-              <button  id="all" class="btn1 custom-text-muted ">All</button>
-              <button id="active" class="btn1 custom-text-muted "> Active </button>
-              <button id="completed" class="btn1 custom-text-muted">Completed</button> 
+              <button onclick="activate(event,this)"  id="all" class="btn1 custom-text-muted ">All</button>
+              <button onclick="activate(event,this)" id="active" class="btn1 custom-text-muted "> Active </button>
+              <button onclick="activate(event,this)" id="completed" class="btn1 custom-text-muted">Completed</button> 
             </div>
             <div class="wrap-item"><button id="clear-completed" class="btn1  custom-text-muted "> clear completed</button> </div>
         </div>
@@ -122,10 +122,14 @@
      Drag and drop to reorder
   </footer>
   <script src="./bootstrap.bundle.min.js"></script>
-  <script src="./app.js" ></script>
+  <script src="./app1.js" ></script>
   <script src="./Sortable.min.js" ></script>
   <script type="text/javascript">
     new Sortable(document.getElementById('todos'));
+    function activate(e,element){
+        element.classList.toggle("custom-blue");
+     
+    }
   </script>
 </body>
 </html>

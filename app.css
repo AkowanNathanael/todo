@@ -19,6 +19,12 @@
 
 
 /* utils */
+.custom-blue{
+    color: blue !important;
+}
+#all:active{
+    color: blue;
+}
 .hideme{
     display: none;
 }
@@ -235,6 +241,7 @@ background-color: inherit;
         left: 10px;
         margin-right: auto;
         margin-left: auto;
+        background: inherit;
 
     }
     /* .wrap-item{ */
