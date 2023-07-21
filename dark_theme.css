@@ -254,7 +254,8 @@ footer{
         background-color: #25273C;
         position: absolute;
         bottom: -25px;
-        width: 89%;
+        width: 90%;
+        left: 10px;
         margin-right: auto;
         margin-left: auto;
 
