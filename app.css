@@ -222,12 +222,18 @@ background-color: inherit;
         font-size: 10px;
     }
     #controls{
-    width: 100%;
+    /* width: 100%; */
     /* background-color: ; */
     /* display: block; */
     /* position: absolute; */
     /* bottom: -100px; */
-    bottom: -70px;
+    /* bottom: -70px; */
+    /* background-color: #25273C; */
+        position: absolute;
+        bottom: -25px;
+        width: 89%;
+        margin-right: auto;
+        margin-left: auto;
 
     }
     /* .wrap-item{ */
