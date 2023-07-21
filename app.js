@@ -180,7 +180,7 @@ function createTodoElement(todo) {
 
   const todoCheckbox = document.createElement("input");
   todoCheckbox.classList.add("form-check-input");
-  todoCheckbox.classList.add("rounded-check");
+  todoCheckbox.classList.add("rounded-checkbox");
   todoCheckbox.setAttribute("type", "checkbox");
   todoCheckbox.onclick = function () {
     Btnlogic(this);

@@ -211,6 +211,19 @@ footer{
 }
 
 
+/* Add custom CSS to make the checkbox rounded with !important */
+.rounded-checkbox {
+    border-radius: 50% !important;
+  }
+  
+  /* Style the custom checkbox when it's checked with !important */
+  .rounded-checkbox:checked {
+    background: linear-gradient(#72BFFD,#A17AF7) !important;
+    /* background-color: #2196F3 !important; */
+     /* Change this to your desired color when the checkbox is checked */
+  }
+
+
 
 
 
