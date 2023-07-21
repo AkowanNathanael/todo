@@ -175,8 +175,12 @@ function createTodoElement(todo) {
     formCheckLeave(this);
   };
 
+  const checkmark = document.createElement("span");
+  checkmark.classList.add("checkmark")
+
   const todoCheckbox = document.createElement("input");
   todoCheckbox.classList.add("form-check-input");
+  todoCheckbox.classList.add("rounded-check");
   todoCheckbox.setAttribute("type", "checkbox");
   todoCheckbox.onclick = function () {
     Btnlogic(this);
@@ -200,6 +204,7 @@ function createTodoElement(todo) {
 
   todoCloseBtn.appendChild(todoCloseImg);
   todoContent.appendChild(todoCheckbox);
+  // todoContent.appendChild(checkmark);
   todoContent.appendChild(todoLabel);
   todoContent.appendChild(todoCloseBtn);
   newTodoItem.appendChild(todoContent);

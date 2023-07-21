@@ -71,6 +71,22 @@ html{
     padding: 1px 3px;
     margin: 1px 2px;
     border-radius: 3px;
+    background-color: inherit;
+}
+
+.custom-text-muted{
+    color: #808082;
+}
+
+.custom-text-muted:hover{
+    color: rgb(255, 255, 255);
+}
+
+.custom-text-muted:active{
+    color:blue;
+}
+.rounded-check{
+    border-radius: 20px;
 }
 
 /* end of utils */
@@ -134,7 +150,7 @@ font-size: 40px;
 .todos{
     /* border: 1px solid rgb(9, 18, 9); */
     box-shadow: 1px 1px 100px 10px rgba(187, 179, 179,0.1);
-    background-color: #181824;
+    /* background-color: #181824; */
 
 }
 
@@ -153,11 +169,11 @@ font-size: 40px;
     /*  */
     background-color: #25273C;
     padding: 15px;
-    border-bottom: 1px solid rgb(218, 204, 204);
-    margin: 3px;
+    /* border-bottom: 1px solid rgb(218, 204, 204); */
+    margin: 1px;
     color: white;
     box-shadow: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(227, 227, 227,0.3);
     /* box-shadow: 1px 1px 3px 1px rgb(205, 198, 198); */
 
 }
