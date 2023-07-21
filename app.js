@@ -1,5 +1,8 @@
 // Function to set the theme based on the cookie value
+if(getCookie("theme")){
+}else {setCookie("theme", "light", 30);} 
 window.addEventListener("load", setThemeFromCookie);
+
 
 function setThemeFromCookie() {
   const theme = getCookie("theme");
