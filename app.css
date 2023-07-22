@@ -185,6 +185,9 @@ background-color: inherit;
     padding: 10px;
     background-color: inherit;
 }
+#all{
+    color: rgb(71, 71, 247);
+}
 /* #controls{
     color:blue;
 } */
